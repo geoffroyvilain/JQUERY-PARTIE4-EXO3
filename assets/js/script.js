@@ -7,9 +7,9 @@ $(function(){
     var lastName = $('#lastName').val();
     var eMail = $('#eMail').val();
     var number = $('#number').val();
-    var regexName = /^[a-zA-Z -]+$/;
-    var regexEmail = /^[\w._-]+@[\w.-_]+[.][a-z]+$/;
-    var regexNumber = /^0(\d){9}$/;
+    var regexName = /^([A-Z]{1}[a-zÀ-ÖØ-öø-ÿ]+)([- ]{1}[A-Z]{1}[a-zÀ-ÖØ-öø-ÿ]+){0,1}$/;
+    var regexEmail = /^[a-zA-Z0-9.!#$%&'*+=?^_`{|}~-]+@[a-zA-Z0-9]+[.]+[a-zA-Z]{2,}$/;
+    var regexNumber = /^0[1-9]{1}[0-9]{8}$/;
 //    console.log(firstName);
 //    console.log(lastName);
 //    console.log(eMail);
